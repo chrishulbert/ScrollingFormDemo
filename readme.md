@@ -1,6 +1,6 @@
 Say you've got a form, such as a 'sign up' form on your iPhone app, and this view controller is basically a screenful of UITextFields. How do you best make the fields scroll out of the way of the keyboard so that they are visible, as you tab between them? Here's my favourite way to do so. It's effective and simple, animates perfectly, and the code is very clean as it takes care .
 
-If you're just after the code and don't want to read this whole article, here it is: XXXX
+If you're just after the code and don't want to read this whole article, here it is: https://github.com/chrishulbert/ScrollingFormDemo
 
 Basically the gist of it is to create a UIViewController whose root view is a subclass of UIScrollView. This scroll view contains many UITextFields. The UIViewController listens to the keyboard appearance notifications, and adjusts the UIScrollView's contentInset to suit. And  UIKit automagically scrolls the scroll view so that the focused UITextField is in the visible area - you get that part for free!
 
@@ -227,4 +227,4 @@ To launch this demo, i've included a little boilerplate in the app delegate:
 	    return YES;
 	}
 
-And that's it! If you'd like to see it all, here it is on github:
+And that's it! If you'd like to see it all, here it is on github: https://github.com/chrishulbert/ScrollingFormDemo
